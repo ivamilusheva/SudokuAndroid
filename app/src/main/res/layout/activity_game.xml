@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BoardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent">
+
+        <GridLayout
+            android:id="@+id/numbers"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="366dp"
+            android:layout_width="360dp">
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyBoard"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|left"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/numbers">
+
+        <Button
+            android:id="@+id/btn1"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn4"
+            android:layout_toStartOf="@+id/btn2"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn4"
+            android:layout_toStartOf="@+id/btn3"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn5"
+            android:layout_alignParentEnd="true"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn7"
+            android:layout_toStartOf="@+id/btn5"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn7"
+            android:layout_toStartOf="@+id/btn6"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btn8"
+            android:layout_alignParentEnd="true"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/btn8"
+            android:layout_alignTop="@+id/btn8"
+            android:layout_toStartOf="@+id/btn8"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/btn9"
+            android:layout_alignTop="@+id/btn9"
+            android:layout_toStartOf="@+id/btn9"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:textColor="@android:color/black"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="18dp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnSolve"
+            android:textColor="@android:color/black"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/btn4"
+            android:layout_alignBottom="@+id/btn4"
+            android:layout_alignEnd="@+id/btnCheck"
+            android:text="Solve puzzle" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:textColor="@android:color/black"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btnSolve"
+            android:layout_toEndOf="@+id/btnUndo"
+            android:text="Check puzzle" />
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:textColor="@android:color/black"
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btnRedo"
+            android:layout_alignParentStart="true"
+            android:text="Undo" />
+
+        <Button
+            android:id="@+id/btnRedo"
+            android:textColor="@android:color/black"
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btnExitGame"
+            android:layout_alignParentStart="true"
+            android:text="Redo" />
+
+        <Button
+            android:id="@+id/btnExitGame"
+            android:textColor="@android:color/black"
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnSolve"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/btnLoadNewGame"
+            android:textColor="@android:color/black"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btnSolve"
+            android:layout_toEndOf="@+id/btnRedo"
+            android:text="Load new game" />
+
+    </RelativeLayout>
+
+</GridLayout>
